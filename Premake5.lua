@@ -1,6 +1,7 @@
 workspace "Basics of ray tracing"
    configurations { "Debug", "Release" }
    language "C++"
+   cppdialect "C++17"
    architecture "x64"
    systemversion "latest"
    toolset "v142"
@@ -25,7 +26,6 @@ project "06. Ray generation"
    files {"src/ray_generation.h", "src/ray_generation.cpp" }
    files {"src/ray_generation_main.cpp"}
 
---[[
 project "07. Moller-Trumbore algorithm"
    kind "ConsoleApp"
    includedirs { "lib/stb" }
@@ -46,7 +46,6 @@ project "08. Lighting and shadows"
    files {"src/lighting_and_shadows.h", "src/lighting_and_shadows.cpp"}
    files {"src/lighting_and_shadows_main.cpp"}
 
-
 project "09. Acceleration structures"
    kind "ConsoleApp"
    includedirs { "lib/stb" }
@@ -58,6 +57,7 @@ project "09. Acceleration structures"
    files {"src/lighting_and_shadows.h", "src/lighting_and_shadows.cpp"}
    files {"src/acceleration_structures.h", "src/acceleration_structures.cpp"}
    files {"src/acceleration_structures_main.cpp"}
+
 
 project "10. Anti-aliasing"
    kind "ConsoleApp"
@@ -71,4 +71,3 @@ project "10. Anti-aliasing"
    files {"src/acceleration_structures.h", "src/acceleration_structures.cpp"}
    files {"src/anti_aliasing.h", "src/anti_aliasing.cpp"}
    files {"src/anti_aliasing_main.cpp"}
-]]--
